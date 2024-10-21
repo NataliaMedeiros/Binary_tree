@@ -6,7 +6,7 @@
 /*   By: nmedeiro <nmedeiro@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/10/21 19:25:31 by nmedeiro      #+#    #+#                 */
-/*   Updated: 2024/10/21 20:08:44 by nmedeiro      ########   odam.nl         */
+/*   Updated: 2024/10/21 20:27:17 by nmedeiro      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,14 @@ int	main(void)
 	// print_tree(tree);
 	printf("************* Original tree *************\n");
 	print_tree_loop(tree, 3);
+	printf("************* Insert numbers *************\n");
+	insert_number(tree, 300);
+	insert_number(tree, 500);
+	insert_number(tree, 98);
+	insert_number(tree, 103);
+	print_tree_loop(tree, 4);
+	printf("************* Mirror tree *************\n");
 	mirror_binary(tree);
-	printf("************* Mirrored tree *************\n");
 	print_tree_loop(tree, 3);
 	// print_tree(tree);
 }
