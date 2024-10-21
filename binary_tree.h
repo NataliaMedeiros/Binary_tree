@@ -6,7 +6,7 @@
 /*   By: nmedeiro <nmedeiro@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/10/21 19:20:53 by nmedeiro      #+#    #+#                 */
-/*   Updated: 2024/10/21 20:22:10 by nmedeiro      ########   odam.nl         */
+/*   Updated: 2024/10/21 20:36:38 by nmedeiro      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,7 @@ t_btree	*mirror_binary(const t_btree *tree);
 void	print_tree_loop(t_btree *tree, int depth);
 
 t_btree	*insert_number(t_btree *tree, int data);
+
+t_btree	*search_number(t_btree *tree, int nb);
 
 #endif

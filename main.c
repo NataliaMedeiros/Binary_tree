@@ -6,7 +6,7 @@
 /*   By: nmedeiro <nmedeiro@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/10/21 19:25:31 by nmedeiro      #+#    #+#                 */
-/*   Updated: 2024/10/21 20:27:17 by nmedeiro      ########   odam.nl         */
+/*   Updated: 2024/10/21 20:37:31 by nmedeiro      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,6 @@ int	main(void)
 	mirror_binary(tree);
 	print_tree_loop(tree, 3);
 	// print_tree(tree);
+	if (search_number(tree, 50) != NULL)
+		printf("Number was found\n");
 }
