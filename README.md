@@ -24,3 +24,7 @@ A binary three can be represented using a linked list or an array.
 
 #### Linked list representation:
 For this kind of representation is used the double linked list, so ww can point to the right and left children of a binary tree node. NULL is given to the the pointer where there ar eno children connected.
+
+## Implementation of a binary tree
+The binary tree is implemented using a struct. Where each node contains 3 elemnents the data, the pointer to the right node and the pointer to the left pointer. The pointer will pointer NULL if it there's no children.
+
