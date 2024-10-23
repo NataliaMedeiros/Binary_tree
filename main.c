@@ -6,7 +6,7 @@
 /*   By: nmedeiro <nmedeiro@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/10/21 19:25:31 by nmedeiro      #+#    #+#                 */
-/*   Updated: 2024/10/21 20:37:31 by nmedeiro      ########   odam.nl         */
+/*   Updated: 2024/10/23 10:15:56 by nmedeiro      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,16 +27,23 @@ int	main(void)
 	// print_tree(tree);
 	printf("************* Original tree *************\n");
 	print_tree_loop(tree, 3);
+	printf("************** Original tree size ********\n");
+	printf("%d\n", size_binary_tree(tree));
 	printf("************* Insert numbers *************\n");
 	insert_number(tree, 300);
 	insert_number(tree, 500);
 	insert_number(tree, 98);
 	insert_number(tree, 103);
 	print_tree_loop(tree, 4);
+	printf("************* Search number *************\n");
+	if (search_number(tree, 50) != NULL)
+		printf("Number was found\n");
+	else
+		printf("Number was NOT found\n");
 	printf("************* Mirror tree *************\n");
 	mirror_binary(tree);
 	print_tree_loop(tree, 3);
 	// print_tree(tree);
-	if (search_number(tree, 50) != NULL)
-		printf("Number was found\n");
+	printf("************** Binary tree size ********\n");
+	printf("%d\n", size_binary_tree(tree));
 }
